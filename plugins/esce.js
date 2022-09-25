@@ -5,7 +5,7 @@ let handler = async (m, { conn, command }) => {
     conn.reply(m.chat, `*BETA V2.0.1.6*
 • *Multi Auth ( Multiple File Session )*
 • https://github.com/BOTCAHX/RT-X-MD
-• Script ini mempunyai miltiple session 
+• Script ini mempunyai multiple session 
 • Maka bila ingin mengambil session nya cukup dengan scan dan ketik di kolom chat bot .getsesi
 • Upload sesi yang di kirim bot mu ke github lalu run ulang.
 • *Jika ingin melihat apa itu multiple session lihat link di bawah ini.*
