@@ -89,15 +89,6 @@ npm start
 
 ---------
 
-
-## Arguments `node . [--options] [<session name>]` 
-
-### `--session <nama file>`
-
-menggunakan session dari nama file yang berbeda, default `session.data.json`
-
-contoh nama file `raxcel.json` maka penggunaannya `node . --session 'raxcel'`
-
 ### `--prefix <prefix>`
 
 * `prefixes` dipisahkan oleh masing-masing karakter
