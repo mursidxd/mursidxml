@@ -18,7 +18,12 @@
 > Jika kurang faham pemasangan masuk ke gc kita.
 
 ## Panel Pterodaktyl
-**Register Here** [`Klik Disini`](https://billing.acidicnodes.ml/register?ref=Rtd0mUOK)
+**Register Here** 
+[`Panel Server 1`](https://bit.ly/3xOyGf2)
+[`Panel Server 2`](https://bit.ly/3BO4gvS)
+
+> Masing masing server mempunyai kecepatan Berbeda!
+
 > Cara pemasangan nya masuk Grup aja kalo tidak mengerti.
 
 
