@@ -7,11 +7,11 @@
 > **Warning**: 
 > Jika kamu menemukan semacam bug, laporkan kepada creator 
 
-• Telah dilakukan pengoptimalan kinerja bot dengan menghapus button mengganggu berjalan nya bot
-• Kalo Erorr apikey nya beli atau ganti sendiri saja
-• Masih Pembangunan
-• Recode dari base ori bochilgaming 
-• Bingung dalam penggunaan masuk aja ke group Diskusi 
+- Telah dilakukan pengoptimalan kinerja bot dengan menghapus button mengganggu berjalan nya bot
+- Kalo Erorr apikey nya beli atau ganti sendiri saja
+- Masih Pembangunan
+- Recode dari base ori bochilgaming 
+- Bingung dalam penggunaan masuk aja ke group Diskusi 
 
 ## Panel Pterodaktyl
 **Register Here** 
