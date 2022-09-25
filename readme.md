@@ -21,10 +21,6 @@
 [`Panel Server 2`](https://bit.ly/3BO4gvS)
 
 > Masing masing server mempunyai kecepatan Berbeda!
-
-> Cara pemasangan nya masuk Grup aja kalo tidak mengerti.
-
-
 ## Join Group Diskusi
 [![BOT DISCUSSION GROUP](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=red)](https://chat.whatsapp.com/JEDQfzMGZan4HA98wtxsNL) 
 
