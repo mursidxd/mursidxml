@@ -1,16 +1,22 @@
-let handler =  m => m.reply(`
-╭─「 Donasi • Pulsa 」
-│ • Pulsa [082221792667]
-│ • Dana [082221792667]
-╰────
+const qrmursid = "https://telegra.ph/file/b1e8e6a876b326a691a8d.jpg"
 
-╭─「 Donasi • Non Pulsa 」
-│ • Dana [082221792667]
-│ • Pulsa [082221792667]
-╰────
-`.trim()) // Tambah sendiri kalo mau
+let handler = async (m, { conn, usedPrefix }) => conn.sendButtonImg(m.chat, qrmursid, `
+┏──「 Donasi • E-money 」─⬣
+│ • Gopay : 088233832771
+│ • Dana : 088233832771
+│ • Smartfren : 088233832771
+│ • Tri : 089674452300
+┗────────⬣
+┏──「 *NOTE* 」─⬣
+│ > Ingin donasi? wa.me/6288233832771
+│ _Hasil donasi akan digunakan buat sewa_
+│ _atau beli *RDP/VPS* agar bot bisa jalan_
+│ _24jam tanpa kendala, siapapun yang donasi_
+│ _akan saya kasih user premium selama 2 minggu_
+┗────────⬣
+`.trim(), wm, 'Menu', usedPrefix + 'menu', m) // Tambah sendiri kalo mau
 handler.help = ['donasi']
-handler.tags = ['info']
+handler.tags = ['about']
 handler.command = /^dona(te|si)$/i
 
-export default handler
+module.exports = handler
