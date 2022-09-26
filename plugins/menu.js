@@ -37,25 +37,36 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭─「 *BOT INFO* 」
-│𖥂 Hai, %name! 👋
-│𖥂 Hari: *%week*
-│𖥂 Bulan: *%date*
-│𖥂 Waktu: *%time*
-│𖥂 Uptime: *%uptime (%muptime)*
-│𖥂 Database : *%rtotalreg* of *%totalreg* 
-│𖥂 Prefix: *[ %p ]*
-╰────
-╭─「 *USER INFO* 」
-│𖥂 Nama: *%name*
-│𖥂 Limit: *%limit*
-│𖥂 Level: *%level*
-│𖥂 XP: *%exp*
-╰────
+┌───────────────────⬣
+│           *мυʀѕι∂ вσт-χмℓ*
+└┬────────────────✽  
+┌┤⬡ *Name* : %name
+││⬡ *Role* : %role
+││⬡ *Level* : %level %exp / %maxexp
+││⬡ *Level Up* : %xp4levelup
+││⬡ *Total Xp* : %totalexp XP
+││⬡ *Tanggal Islam* : %dateIslamic
+││⬡ *Tanggal* : %date
+││⬡ *Waktu* : %time WIB
+││⬡ *Hari* : %week %weton
+│└────────────────✽
+│ ⬡ *Pengguna* :  %name 
+│ ⬡ *Limit* : %limit
+│ ⬡ *Exp* : %totalexp
+│ ⬡ *Level* : %level
+│ ⬡ *Role* : %role
+│ ⬡ *Premium* : ${global.prem ? 'Premium' : 'Gratisan'}
+├─────────────────✽
+│⬡ *Uptime* : %uptime
+│⬡ *Library* : Baileys Multi Device
+│⬡ *Prefix Used* : [ %p ]
+│⬡ *Database* : %rtotalreg dari %totalreg 
+│⬡ *Instagram* : https://instagram.com/mursid.st
+└───────────────────⬣
 `.trimStart(),
-  header: '╭─「 *%category* 」',
-  body: '│𖥂 %cmd %islimit %isPremium',
-  footer: '╰────\n',
+  header: '┌──「 *%category* 」──⬣',
+  body: '│ ⬡  %cmd %islimit %isPremium',
+  footer: '└─────────⬣\n',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -127,8 +138,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
               return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                .replace(/%islimit/g, menu.limit ? '(Limit)' : '')
-                .replace(/%isPremium/g, menu.premium ? '(Premium)' : '')
+                .replace(/%islimit/g, menu.limit ? '(Ⓛ)' : '')
+                .replace(/%isPremium/g, menu.premium ? '(Ⓟ)' : '')
                 .trim()
             }).join('\n')
           }),
@@ -155,16 +166,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-		const url = 'https://telegra.ph/file/77191dd98b217d2a08fcd.png'
-		conn.sendButton(m.chat, text.trim(), '©' + author, url, [
-			[`Speed`, `.speed`],
-			[`Script`, `.sc`],
-			[`Donasi`, `.donasi`]
+		const url = 'https://telegra.ph/file/db97cbf789d0fffa1a688.jpg'
+		conn.sendButton(m.chat, text.trim(), 'мυʀѕι∂ вσт-χмℓ ' + author, url, [
+			[`ѕємυα ρєʀιɴтαн`, `.menu`],
+			[`ρємιℓιк вσт`, `.owner`],
+			[`ѕᴄʀɪρт`, `.sc`]
 	], false, {
 			asLocation: true
 		})
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'мααƒ, мєɴυ ѕє∂αɴg єʀʀᴏʀ', m)
     throw e
   }
 }
